@@ -1,0 +1,15 @@
+body{
+    font-family: sans-serif;
+    font-size: large;
+}
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #bd40f7;
+    height: 100px;
+}
+img{
+    width: 500px;
+    height: 500px;
+}
