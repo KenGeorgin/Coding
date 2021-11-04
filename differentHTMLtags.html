@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
+        legend{
+            font-size: 20px;
+        }
+    </style>
+    <title>Different HTML Tags</title>
+</head>
+<body background-color="skyblue">
+    <fieldset>
+        <legend>Tags in HTML</legend>
+        <div>
+            <label>Names</label>
+        </div>
+        <div>
+            <input list="year-list" type="text">
+            <datalist id="year-list">
+                <option value="Georgin Josph">
+                <option value="Diana Georgin">
+                <option value="Ken Georgin">
+                <option value="Neil Georgin">
+                <option value="Helen Georgin">
+            </datalist>
+        </div>
+
+        <br>
+
+        <div>
+            <label>Color Picker</label>
+        </div>
+        <div>
+            <input type="color">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Date</label>
+        </div>
+        <div>
+            <input type="date">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Time</label>
+        </div>
+        <div>
+            <input type="time">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Check Box</label>
+        </div>
+        <div>
+            <input type="checkbox">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Button</label>
+        </div>
+        <div>
+            <input type="button">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Date + Time</label>
+        </div>
+        <div>
+            <input type="datetime-local">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Email</label>
+        </div>
+        <div>
+            <input type="email">
+        </div>
+
+        <br>
+
+        <div>
+            <label>File</label>
+        </div>
+        <div>
+            <input type="file">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Image</label>
+        </div>
+        <div>
+            <input type="image">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Month</label>
+        </div>
+        <div>
+            <input type="month">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Number</label>
+        </div>
+        <div>
+            <input type="number">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Password</label>
+        </div>
+        <div>
+            <input type="password">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Range</label>
+        </div>
+        <div>
+            <input type="range">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Reset</label>
+        </div>
+        <div>
+            <input type="reset">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Search</label>
+        </div>
+        <div>
+            <input type="search">
+        </div>  
+
+        <br>
+
+        <div>
+            <label>Submit</label>
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Tell</label>
+        </div>
+        <div>
+            <input type="tel">
+        </div>
+
+        <br>
+
+        <div>
+            <label>Text</label>
+        </div>
+        <div>
+            <input type="text">
+        </div>
+
+        <br>
+
+        <div>
+            <label>URL</label>
+        </div>
+        <div>
+            <input type="url">
+        </div>  
+        
+        <br>
+
+        <div>
+            <label>Week</label>
+        </div>
+        <div>
+            <input type="week">
+        </div>
+    </fieldset>
+
+    <!--example of <sub></sub> tag-->
+    <h3>Example of sub tag</h3>
+    <p>H<sub>2</sub>O</p>
+    <p>O<sub>2</sub></p>
+    <p>X<sub>2</sub> * Y<sub>4</sub></p>
+
+    <br>
+
+    <!--example of <picture>, <source> tag-->
+    <h3>example of picture, source tag</h3>
+    <picture>
+        <source srcset="images/boat.png" media="(min-width: 900px)">
+        <img src="images/car.png" style="width: 700px">
+    </picture>
+
+    <br>
+
+    <!--example of <template></template> tag-->
+    <h1>Example of template tag</h1>
+    <template>
+        <h3>My name is Ken Georgin</h3>
+        <small>Programmer</small>
+    </template>
+<!--script for the template tag to show on the screen-->
+<!--because,if we put any thing inside the template tag.We can't show on the screen, so we put the script for,it-->
+<script>
+    const template = document.querySelector('template')
+    const content = template.content.cloneNode(true)
+    document.body.append(content)
+</script>
+<!--if we give false on the second line of the script the content inside the teemplate won't appear in the screen-->
+
+</body>
+</html>
